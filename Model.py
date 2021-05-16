@@ -47,7 +47,7 @@ class Models:
 
     def train(self):
         """
-        
+            The function the is responsible for running different classification models
         """
         skf = StratifiedKFold(n_splits=5, shuffle = True)
         score = []
