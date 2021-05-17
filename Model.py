@@ -15,7 +15,7 @@ import pickle
 
 
 class Models:
-    def __init__(self, X, y, xgboost: bool = False, logistic_regression: bool = False, random_forest: bool = False,
+    def __init__(self, X: pandas.DataFrame, y: pandas.DataFrame, xgboost: bool = False, logistic_regression: bool = False, random_forest: bool = False,
      KNN: bool = False, gaussian: bool = False, cat: bool = False) -> None:
         '''
             The constructor of the customer statisfaction models.
