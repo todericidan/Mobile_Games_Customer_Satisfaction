@@ -91,7 +91,7 @@ class Models:
                 knn.fit(X_train, y_train)
                 y_pred_knn = knn.predict(X_test)
                 score.append(accuracy_score(y_test, y_pred_knn))
-            print("Accuracy (Cat Regression): {}".format(sum(score)/len(score)))
+            print("Accuracy (KNN): {}".format(sum(score)/len(score)))
             pickle.dump(knn, open("../KNN.pkl", "wb"))
         
         if self.random_forest:
@@ -105,7 +105,7 @@ class Models:
                 forest.fit(X_train, y_train)
                 y_pred_forest = forest.predict(X_test)
                 score.append(accuracy_score(y_test, y_pred_forest))
-            print("Accuracy (Cat Regression): {}".format(sum(score)/len(score)))
+            print("Accuracy (Random Forest): {}".format(sum(score)/len(score)))
             pickle.dump(forest, open("../RandomForest.pkl", "wb"))
 
         if self.gaussian:
@@ -119,7 +119,7 @@ class Models:
                 gauss.fit(X_train, y_train)
                 y_pred_gauss = gauss.predict(X_test)
                 score.append(accuracy_score(y_test, y_pred_gauss))
-            print("Accuracy (Cat Regression): {}".format(sum(score)/len(score)))
+            print("Accuracy (Gaussian): {}".format(sum(score)/len(score)))
             pickle.dump(gauss, open("../Gauss.pkl", "wb"))
 
         if self.xgboost:
@@ -133,5 +133,5 @@ class Models:
                 xgboost.fit(X_train, y_train)
                 y_pred_xgb = xgboost.predict(X_test)
                 score.append(accuracy_score(y_test, y_pred_xgb))
-            print("Accuracy (Cat Regression): {}".format(sum(score)/len(score)))
+            print("Accuracy (XGBoost): {}".format(sum(score)/len(score)))
             pickle.dump(xgboost, open("../XGBoost.pkl", "wb"))
