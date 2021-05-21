@@ -22,8 +22,13 @@ The labeling of the data into bugs and features was done manually on 5000 items 
 ![Features and Bugs](images//pie_plot.png)
 #### Overall score distribution for free and paid apps
 ![Distribution paid and free apps](images//chart_plot.png)
-#### Popular genres produced by game companies ]
+#### Popular genres produced by game companies
 ![Popular genres produced by game companies](images//genuri_de_aplicatii.png)
+#### Top 20 game developers
+![Top 20 game developers](images//top_20_dezvoltatori.png)
+
+#### Number of popular games in a genre produced by companies
+![Number of popular games in a genre](images//chart_number_of_popular_games.png)
 
 ### Preprocessing Data
  * Data cleaning - spell checking and removing punctuation, stop words and hapaxes
