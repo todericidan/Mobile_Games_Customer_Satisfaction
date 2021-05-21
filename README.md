@@ -12,7 +12,7 @@ This study researches sentiment analysis for Play Marker game apps. The goals of
 
 ### Scraping
 This project analyzes and classifies the sentiment on a [dataset from kaggle](https://www.kaggle.com/lava18/google-play-store-apps?select=googleplaystore_user_reviews.csv). 
-The trained and then tested on a dataset scrapped from Google Play Market with the help of [Google Play Scraper Library](https://github.com/facundoolano/google-play-scraper#reviews).
+We trained and then tested on a dataset scrapped from Google Play Market with the help of [Google Play Scraper Library](https://github.com/facundoolano/google-play-scraper#reviews).
 The labeling of the data into bugs and features was done manually on 5000 items from the scrapped dataset.
 
 ### Exploratory Data Analysis
