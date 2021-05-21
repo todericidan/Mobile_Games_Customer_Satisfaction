@@ -1,9 +1,7 @@
 # Mobile_Games_Customer_Satisfaction
-Sigmoid The Dons Final Project
+Sigmoid **The Dons** Final Project
 ## General Info
 Mobile Apps Market is overwhelmed with games. Even more so - overwhelmed with customer reviews for the games. On average 629 apps are released daily on the App Market. From that 14.2% are in the games category on the PlayMarket. For a developer it is difficult to extract useful data from this amount of information. Our research will ease their jobs by categorizing the reviews not only by user satisfaction, but specific indices such as bugs and features, that can then be used to rate the success of the game and predict its longevity.
-
-![Market Statistics](images//market_statistics.png)
 
 For more information about the mobile game market please consult our [Business Intelligence Research](https://drive.google.com/drive/folders/1n2A04Z0OhfP9Vbb8u-E-JLzMkaqhPSTW?usp=sharing).
 
@@ -18,10 +16,14 @@ The trained and then tested on a dataset scrapped from Google Play Market with t
 The labeling of the data into bugs and features was done manually on 5000 items from the scrapped dataset.
 
 ### Exploratory Data Analysis
-Top 20 applications with most reviews (insert image here)
-Features & bugs PyChart (insert image here)
-Overall score distribution for free and paid apps (insert image here for both)
-Popular genres produced by game companies (insert image here - 4 of them)
+#### Top 20 applications with most reviews 
+![Top 20 Aplicatii](images//frequency_review.png)
+#### Features & bugs PyChart
+![Features and Bugs](images//pie_plot.png)
+#### Overall score distribution for free and paid apps
+![Distribution paid and free apps](images//chart_plot.png)
+#### Popular genres produced by game companies ]
+![Popular genres produced by game companies](images//genuri_de_aplicatii.png)
 
 ### Preprocessing Data
  * Data cleaning - spell checking and removing punctuation, stop words and hapaxes
@@ -40,9 +42,9 @@ Popular genres produced by game companies (insert image here - 4 of them)
 - Output: 0.92
 
 ## Technologies
-JavaScript Libraries 
+### JavaScript Libraries 
 * Play Market Scraper
-Python Libraries 
+### Python Libraries 
 * included in the requirement.txt document
 
 ## Setup
