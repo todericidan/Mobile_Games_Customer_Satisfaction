@@ -17,13 +17,13 @@ The labeling of the data into bugs and features was done manually on 5000 items 
 
 ### Exploratory Data Analysis
 #### Top 20 applications with most reviews 
-![Top 20 Aplicatii](images//frequency_review.png | width=200)
+![Top 20 Aplicatii](images//frequency_review.png)
 #### Features & bugs PyChart
-![Features and Bugs](images//pie_plot.png | width=200)
+![Features and Bugs](images//pie_plot.png)
 #### Overall score distribution for free and paid apps
-![Distribution paid and free apps](images//chart_plot.png | width=200)
+![Distribution paid and free apps](images//chart_plot.png)
 #### Popular genres produced by game companies ]
-![Popular genres produced by game companies](images//genuri_de_aplicatii.png | width=200)
+![Popular genres produced by game companies](images//genuri_de_aplicatii.png)
 
 ### Preprocessing Data
  * Data cleaning - spell checking and removing punctuation, stop words and hapaxes
