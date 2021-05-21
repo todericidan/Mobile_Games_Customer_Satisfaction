@@ -3,7 +3,7 @@ Sigmoid The Dons Final Project
 ## General Info
 Mobile Apps Market is overwhelmed with games. Even more so - overwhelmed with customer reviews for the games. On average 629 apps are released daily on the App Market. From that 14.2% are in the games category on the PlayMarket. For a developer it is difficult to extract useful data from this amount of information. Our research will ease their jobs by categorizing the reviews not only by user satisfaction, but specific indices such as bugs and features, that can then be used to rate the success of the game and predict its longevity.
 
-![Market Statistics](image\\market_statistics.png)
+![Market Statistics](images\\market_statistics.png)
 
 For more information about the mobile game market please consult our [Business Intelligence Research](https://drive.google.com/drive/folders/1n2A04Z0OhfP9Vbb8u-E-JLzMkaqhPSTW?usp=sharing).
 
@@ -33,8 +33,8 @@ Random Forest Classifier
 - accuracy_score(y_test, y_pred)
 - output: 0.87
 CatBoost Classifier
-- accuracy_score(y_test, y_pred)
-- Output: 0.97
+* accuracy_score(y_test, y_pred)
+* Output: 0.97
 VotingClassifier
 - accuracy_score(y_test, y_pred)
 - Output: 0.92
