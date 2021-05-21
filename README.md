@@ -49,6 +49,6 @@ The labeling of the data into bugs and features was done manually on 5000 items 
 
 ## Setup
 1. Install python virtual environment (conda)
-2. Run in the shell `pip install -r requirement.txt`  to install all necessary libraries.
+2. Run in the shell `pip install -r requirements.txt`  to install all necessary libraries.
 3. Open the setup.py, change the value of X to your desired input and run the script.
 4. You will get one of the following texts: irrelevant, bug or feature
