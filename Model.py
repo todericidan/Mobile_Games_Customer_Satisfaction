@@ -15,7 +15,7 @@ import pickle
 
 
 class Models:
-    def __init__(self, X: pandas.DataFrame, y: pandas.DataFrame, xgboost: bool = False, logistic_regression: bool = False, random_forest: bool = False,
+    def __init__(self, X: pd.DataFrame, y: pd.DataFrame, xgboost: bool = False, logistic_regression: bool = False, random_forest: bool = False,
      KNN: bool = False, gaussian: bool = False, cat: bool = False) -> None:
         '''
             The constructor of the customer statisfaction models.
@@ -135,3 +135,13 @@ class Models:
                 score.append(accuracy_score(y_test, y_pred_xgb))
             print("Accuracy (XGBoost): {}".format(sum(score)/len(score)))
             pickle.dump(xgboost, open("../XGBoost.pkl", "wb"))
+    
+    def predict(X):
+        model = pickle.load(open("RandomForest(2).pkl", 'rb'))
+        y = model.predict(X)
+        if y == 0:
+            print('trash')
+        elif y == 1:
+            print('bug')
+        else:
+            print('feature')
