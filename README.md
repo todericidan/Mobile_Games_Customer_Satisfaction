@@ -19,7 +19,7 @@ The labeling of the data into bugs and features was done manually on 5000 items 
 #### Top 20 applications with most reviews 
 ![Top 20 Aplicatii](images//frequency_review.png)
 #### Features & bugs PyChart
-![Features and Bugs](images//pie_plot.png)
+![Features and Bugs](images//pie_chart.png)
 #### Overall score distribution for free and paid apps
 ![Distribution paid and free apps](images//chart_plot.png)
 #### Popular genres produced by game companies
