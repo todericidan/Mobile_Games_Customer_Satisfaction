@@ -1,3 +1,4 @@
+#Importing the libraries
 import pandas as pd
 from sklearn.base import BaseEstimator, TransformerMixin
 
@@ -24,6 +25,9 @@ class WordExtractor(BaseEstimator, TransformerMixin):
     def __init__(self, stop_words = None):
         self.__stop_words = stop_words
     def fit(self, X, y=None):
+
+        """ This function is responsible for finding the hapaxes."""
+
         self.__hapaxes = []
         
         fdist = FreqDist()
@@ -32,7 +36,9 @@ class WordExtractor(BaseEstimator, TransformerMixin):
         return self
 
     def transform(self, X, y=None):
-        
+
+        """This function is deleting the stopwords, resize the text to lower case and remove all the numbers from the text."""
+
         X = re.sub(regex, " ", X)
         X = X.lower()
         self.fit(X)
@@ -51,6 +57,9 @@ class ApplyStemmer(BaseEstimator, TransformerMixin):
     def fit(self, X, y=None):
         return self
     def transform(self, X, y=None):
+
+        """This function amply the stemmer on every word in the sentence."""
+
         X =  ' '.join([self.stemmer.stem(word) for word in word_tokenize(X)])
         vectorizer=CountVectorizer()
         X = vectorizer.fit_transform([X])

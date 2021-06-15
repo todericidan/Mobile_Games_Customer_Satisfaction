@@ -18,7 +18,7 @@ class Models:
     def __init__(self, X: pd.DataFrame, y: pd.DataFrame, xgboost: bool = False, logistic_regression: bool = False, random_forest: bool = False,
      KNN: bool = False, gaussian: bool = False, cat: bool = False) -> None:
         '''
-            The constructor of the customer statisfaction models.
+            The constructor of the customer satisfaction models.
         :param X: 'DataFrame'
             The features values of the dataset
         :param y: 'DataFrame'
@@ -47,7 +47,7 @@ class Models:
 
     def train(self):
         """
-            The function the is responsible for running different classification models
+            The function is responsible for running different classification models
         """
         skf = StratifiedKFold(n_splits=5, shuffle = True)
         score = []
@@ -137,6 +137,9 @@ class Models:
             pickle.dump(xgboost, open("../XGBoost.pkl", "wb"))
     
     def predict(X):
+        """
+            This function is used to predict future data, with a pretrained model, the default model is RandomForest.
+        """
         model = pickle.load(open("RandomForest(2).pkl", 'rb'))
         y = model.predict(X)
         if y == 0:
