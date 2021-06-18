@@ -22,7 +22,12 @@ nltk.download('punkt')
 regex = r'[^a-zA-Z]'
 
 class WordExtractor(BaseEstimator, TransformerMixin):
-    def __init__(self, stop_words = None):
+    def __init__(self, stop_words: string = None):
+        '''
+            The constructor of the WordExtractor
+        :param stop_words: string, default = None
+            The string which represents the used stop word
+        '''
         self.__stop_words = stop_words
     def fit(self, X, y=None):
 
@@ -53,6 +58,11 @@ class WordExtractor(BaseEstimator, TransformerMixin):
 
 class ApplyStemmer(BaseEstimator, TransformerMixin):
     def __init__(self, stemmer = None):
+        '''
+            The constructor of the ApplyStemmer
+        :param stemmer: string, default = None
+            The string which represents the used stemmer
+        '''
         self.stemmer = stemmer
     def fit(self, X, y=None):
         return self
